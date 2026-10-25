@@ -1,4 +1,4 @@
-/* Anfitrião IA — comum a todas as páginas: língua PT/EN, copiar, aviso, formulário com fallback mailto */
+/* Anfitrião IA — comum a todas as páginas: língua PT/EN, copiar, aviso, formulários (se existirem) com fallback mailto */
 (function(){
   var KEY = "aia_lang";
   var root = document.documentElement;
@@ -61,7 +61,7 @@
             if (el.type === "checkbox") { lines.push(el.name + ": " + (el.checked ? "sim" : "não")); return; }
             lines.push(el.name + ": " + el.value);
           });
-          var subject = f.getAttribute("data-mail-subject") || "Pré-reserva Kit AL";
+          var subject = f.getAttribute("data-mail-subject") || "Anfitrião IA";
           if (btn) btn.disabled = false;
           var st = f.querySelector(".form-status");
           if (st) st.hidden = false;
