@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /anfitriao-ia/obrigado.html
+
+Sitemap: https://dayinportugal-coder.github.io/anfitriao-ia/sitemap.xml
